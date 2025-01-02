@@ -1,0 +1,157 @@
+
+   .container {
+    display: flex;
+    flex-direction: column; /* Stack form and tasks vertically */
+    align-items: center; /* Center align everything horizontally */
+    justify-content: center; /* Center align everything vertically */
+    gap: 20px; /* Space between the form and the tasks */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+   .form {
+    display: flex;
+    flex-direction: column; /* Stack form inputs vertically */
+    width: 400px; /* Set a consistent width for the form */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional border for form styling */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background color for form */
+    max-width: 600px; /* Makes form more narrow on larger screens */
+    margin: 0 auto;
+}
+
+.form input, .form button {
+    margin-bottom: 10px; /* Space between form elements */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Input and button borders */
+    border-radius: 4px; /* Rounded edges */
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column; /* Stack tasks vertically */
+    align-items: center; /* Center tasks horizontally */
+    justify-content: center; /* Center tasks vertically */
+    min-height: 100vh; /* Ensure full height for centering */
+    padding: 20px; /* Optional: Add some padding around */
+    background-color: #f9f9f9; /* Optional: Light background for better visibility */
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the task items */
+    gap: 15px;
+    width: 100%;
+}
+
+   .todo-item {
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Align text and button vertically */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 500px; /* Increase width of task items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+    margin-bottom: 10px; /* Space between tasks */
+    flex-direction: column;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: column; /* Stack title and description */
+    align-items: flex-start; /* Align text to the left */
+    margin-right: 5px;
+}
+
+.todo-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space below the title */
+    text-align: left; /* Align text to the left */
+}
+
+.todo-description {
+    font-size: 14px;
+    color: #555; /* Slightly muted color */
+    margin-bottom: 5px; /* Space below the description */
+    text-align: left; /* Align text to the left */
+}
+
+.todo-due-date {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    align-self: flex-start;
+    width: fit-content;
+  }
+
+  .todo-priority {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .priority-high {
+    color: red;
+  }
+  
+  .priority-medium {
+    color: orange;
+  }
+  
+  .priority-low {
+    color: green;
+  }
+  
+  /* Status styling */
+  .todo-status {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .status-completed {
+    color: green;
+  }
+  
+  .status-inprogress {
+    color: orange;
+  }
+  
+  .status-pending {
+    color: gray;
+  }
+  
+.todo-buttons {
+    display: flex;
+    justify-content: flex-end; /* Push buttons to the right */
+    width: 100%; /* Ensure buttons align to the full width */
+    gap: 10px; /* Space between buttons */
+}
+
+.todo-button {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px; /* Button padding */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.todo-button:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
