@@ -32,4 +32,4 @@ npm run dev
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/edenhotz/tiff-assignment.git
+   git clone https://github.com/edenhotz/tiff.git
